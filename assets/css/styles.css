@@ -1,0 +1,196 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    transform: translateX(calc((100% - 100vw) / 2));
+    z-index: -2;
+  }
+
+header {
+    background-color: #a3cbf0;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+h1 {
+    color: #283397;
+    font-size: 28px;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    border-radius: 20px;
+    overflow: hidden;
+    width: 30%;
+    height: 100%;
+    margin-top: 20px;
+    margin-right: 5%; 
+    background: rgba(255, 255, 255, 0.075);
+    backdrop-filter: blur(10px);
+}
+
+
+.message-container {
+    flex: 1;
+    padding: 20px;
+}
+
+.buttons-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 20px;
+    position: relative;
+    left: 300px; 
+    bottom: 300px;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border: 1px solid #4CAF50;
+    border-radius: 4px;
+    transition: border-color 0.3s ease-in-out;
+    color: #1f1f1f;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.cifrar-btn,
+.descifrar-btn {
+    background-color: #3a4c6e;
+    color: #fff;
+    border: none;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: background-color 0.3s ease-in-out;
+    position: relative;
+    right: 20px; 
+}
+
+.cifrar-btn:hover,
+.descifrar-btn:hover {
+    background-color: #45a049;
+}
+
+.container {
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-size: 16px;
+    color: #4CAF50;
+}
+
+input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border: 1px solid #4CAF50;
+    border-radius: 4px;
+    transition: border-color 0.3s ease-in-out;
+    color: #1f1f1f;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+input:focus {
+    border-color: #45a049;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #333;
+    color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #4CAF50;
+    border-radius: 8px;
+    width: 50%;
+}
+
+.close {
+    color: #4CAF50;
+    float: right;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: #45a049;
+}
+
+#modalResultado {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid #4CAF50;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    resize: none;
+}
+
+#modalResultado:focus {
+    border-color: #45a049;
+}
+
+#myModal button {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 5px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#myModal button:hover {
+    background-color: #45a049;
+}
